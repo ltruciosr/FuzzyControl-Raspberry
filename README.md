@@ -1,4 +1,4 @@
-# MCP4725 - ADS1X15 and Raspberry pi - python3
+# MCP4725 - ADS1X15 / Raspberry PI
 El conversor DAC MCP4725 de Adafruit es un dispositivo simple, pequeño, y facil de configurar.
 Podemos aprovechar que posee un amplificador para realizar diversas tareas, y en este tutorial aprenderemos a usarlo.
 
@@ -26,7 +26,8 @@ Usaremos la direccion para especificar la base del nuevo environment.
 cd ~
 virtualenv liiarc3 --python=/usr/bin/python3.7 --system-site-packages
 ```
-	Utilizamos --system-syte-packages, para instalar las librerias que se encuentran en el root de la version, ahora podemos activar el environment e instalar las librerias necesarias.
+
+Utilizamos --system-syte-packages, para instalar las librerias que se encuentran en el root de la version, ahora podemos activar el environment e instalar las librerias necesarias.
 ```
 cd liiaarc3
 source bin/activate
