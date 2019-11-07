@@ -11,6 +11,32 @@ Se recomienda crear un environment virtual para evitar problemas de compatibilid
 sudo apt-get update
 sudo apt-get upgrade
 ```
+### Configuramos el I2C
+I2C es un estandar usado usualmente para transferir informacion con distitos chips disponibles en el mercado, podemos comunicar nuestro Raspberry con distintos chips mediante i2c.
+El bus i2c permite a multiples dispositivos conectarse con nuestro Raspberry Pi, cada uno con una diferente direccion, la cual frecuentemente puede ser cambiada desde el modulo.
+Activaremos la comunicacion I2C de la siguiente forma
+```
+sudo apt-get install -y python-smbus
+sudo apt-get install -y i2c-tools
+```
+Ingresamos al kernel para activar la comunicacion I2C
+
+```
+sudo raspi-config
+```
+Luego buscamos la opcion 'Interfacing Options', posteriormente entramos a 'I2C' (En versiones antiguas debemos de ingresar en 'Advanced Options').
+Finalmente nos saldra una ventana que dira:
+"Would you like the ARM I2C interface to be enable", le damos en <Yes>, finalmente.
+
+```
+sudo reboot
+```
+Cuando volvemos a ingresar testeamos I2C.
+```
+sudo i2cdetect -y 1
+```
+### Instalamos virtualenv
+```
 ### Instalamos virtualenv
 ```
 sudo pip install virtualenv
