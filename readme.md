@@ -67,7 +67,15 @@ source bin/activate
 
 # Instalacion Libreria Scikit-Fuzzy
 
+Necesitamos algunas librerias para poder correr Scikit-Fuzzy
 ```
+pip install numpy
+pip install scipy
+pip install matplotlib
+```
+Una vez que hemos instalado las librerias instalamos git y scikit-fuzzy
+```
+sudo apt-get install git
 (liiaarc)pi@raspberrypi~/liiaarc3 $ pip install scikit-fuzzy
 ```
 Instalamos mediante PyP ya que es mas sencillo.
