@@ -35,30 +35,36 @@ Cuando volvemos a ingresar testeamos I2C.
 ```
 sudo i2cdetect -y 1
 ```
+
 ### Instalamos virtualenv
-```
-### Instalamos virtualenv
+
 ```
 sudo pip install virtualenv
 ```
+
 ### Creamos nuestro primer virtualenv
 Primero debemos buscar donde se encuentra la version de python que queremos instalar (py2.7 en este caso)
+
 ```
 which python 3.7
 ```
+
 El terminal responde con: /usr/bin/python3.7
 Usaremos la direccion para especificar la base del nuevo environment.
+
 ```
 cd ~
 virtualenv liiarc3 --python=/usr/bin/python3.7 --system-site-packages
 ```
 
 Utilizamos --system-syte-packages, para instalar las librerias que se encuentran en el root de la version, ahora podemos activar el environment e instalar las librerias necesarias.
+
 ```
 cd liiaarc3
 source bin/activate
 (liiaarc)pi@raspberrypi~/liiaarc3 $
 ```
+
 # Circuit Python Library Installer
 Para poder instalar las librerias de Adafruit, es necesario tener el root de las librerias, por lo cual necesitamos instalar Circuit Python.
 ### Instalar Adafruit CircuitPython Library Bundle
