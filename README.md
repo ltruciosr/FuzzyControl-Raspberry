@@ -65,6 +65,12 @@ source bin/activate
 (liiaarc)pi@raspberrypi~/liiaarc3 $
 ```
 
+# Instalacion Libreria Scikit-Fuzzy
+
+```
+(liiaarc)pi@raspberrypi~/liiaarc3 $ pip install scikit-fuzzy
+```
+Instalamos mediante PyP ya que es mas sencillo.
 # Circuit Python Library Installer
 Para poder instalar las librerias de Adafruit, es necesario tener el root de las librerias, por lo cual necesitamos instalar Circuit Python.
 ### Instalar Adafruit CircuitPython Library Bundle
