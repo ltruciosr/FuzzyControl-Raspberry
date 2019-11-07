@@ -71,26 +71,15 @@ source bin/activate
 (liiaarc)pi@raspberrypi~/liiaarc3 $ pip install scikit-fuzzy
 ```
 Instalamos mediante PyP ya que es mas sencillo.
-# Circuit Python Library Installer
-Para poder instalar las librerias de Adafruit, es necesario tener el root de las librerias, por lo cual necesitamos instalar Circuit Python.
-### Instalar Adafruit CircuitPython Library Bundle
-Una vez que nos encontramos en el environment [Guia](https://github.com/adafruit/Adafruit_CircuitPython_Bundle).
-```
-cd ~/liiarc3
-source bin/activate
-pip install circuitpython-build-tools
-```
-Luego corremos el build.
-```
-cd ~
-circuitpython-build-bundles --filename_prefix adafruit-circuitpython-bundle --library_location libraries --library_depth 2
-``` 
 
 # Intalar Adafruit CircuitPython MCP4725
 Instalaremos la libreria siguiendo esta [Guia](https://learn.adafruit.com/mcp4725-12-bit-dac-tutorial/python-circuitpython).
 Nos aseguramos que nos encontramos en el environment.
+
 ```
-circuitpython-build-bundles --filename_prefix adafruit-circuitpython-mcp4725 --library_location .
+cd liiaarc3
+source bin/activate
+pip3 install adafruit-adafruit-circuitpython-mcp4725
 ```
 
 # Instalar Adafruit ADC Breakout ADS1115
@@ -100,13 +89,7 @@ Nos aseguramos que nos encontramos en el environment.
 ## Installing from PyPI
 Podemos installar la libreria directamente desde pip3
 ```
+cd liiaarc3
+source bin/activate
 pip3 install adafruit-circuitpython-ads1x15
 ```
-Si queremos instalar en nuestro propio proyecto usamos.
-```
-cd ~/liiaarc3
-source bin/activate
-cd ~
-circuitpython-build-bundles --filename_prefix adafruit-circuitpython-ads1x15 --library_location .
-```
-
